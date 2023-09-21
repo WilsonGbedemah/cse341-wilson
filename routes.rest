@@ -1,0 +1,19 @@
+// LOCALHOST
+###
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/650acc7d9a9a0652c4b9305e
+###
+GET http://localhost:8080/contacts/650acc7d9a9a0652c4b9305f
+###
+GET http://localhost:8080/contacts/650acc7d9a9a0652c4b93060
+
+// PRODUCTION Deploy
+###
+GET https://cse341-felix.onrender.com/contacts
+###
+GET https://cse341-instructor.herokuapp.com/contacts/650acc7d9a9a0652c4b9305e
+###
+GET https://cse341-instructor.herokuapp.com/contacts/650acc7d9a9a0652c4b9305f
+###
+GET https://cse341-instructor.herokuapp.com/contacts/650acc7d9a9a0652c4b93060

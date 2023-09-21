@@ -1,0 +1,23 @@
+[
+ {
+    "firstName": "Gifty",
+    "lastName": "Gbedemah",
+    "email": "giftygbedemah@gmail.com",
+    "favoriteColor": "Pink",
+    "birthday": "9/5/2000"
+  },
+   {
+    "firstName": "Daniel",
+    "lastName": "Asante",
+    "email": "asantedanny25@gmail.com",
+    "favoriteColor": "Black",
+    "birthday": "27/6/2005"
+  },
+   {
+    "firstName": "Bruno",
+    "lastName": "Edoh",
+    "email": "brunoEdoh@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "06/10/1996"
+  }
+]
