@@ -1,12 +1,54 @@
 // LOCALHOST
 ###
 GET http://localhost:8080/contacts
-###
+
+### Get contacts by id
 GET http://localhost:8080/contacts/650acc7d9a9a0652c4b9305e
 ###
 GET http://localhost:8080/contacts/650acc7d9a9a0652c4b9305f
 ###
 GET http://localhost:8080/contacts/650acc7d9a9a0652c4b93060
 
+### Create contact 
+POST  http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+
+{
+"firstName":"Lucas",
+"lastName":"Kuma",
+"email":"lucasKumah1@gmail.com",
+"favoriteColor":"red", 
+"birthday":"05/10/1991"
+}
+
+### PUT/update contact 
+PUT http://localhost:8080/contacts/650acc7d9a9a0652c4b9305e HTTP/1.1 content-type: application/json
+
+{
+"firstName":"Gifty",
+"lastName":"Gbedemah", 
+"email":"newlook1@gmail.com", 
+"favoriteColor":"Orange", 
+"birthday":"9/5/2000"
+}
+
+### DELETE contact
+DELETE DELETE http://localhost:8080/contacts/650acc7d9a9a0652c4b93060 HTTP/1.1
+
+
+
+
 // PRODUCTION Deploy
 ###
+
+###
+GET https://cse341-wilson.onrender.com/contacts
+
+###
+GET https://cse341-wilson.onrender.com/contacts/650acc7d9a9a0652c4b9305e
+
+###
+GET https://cse341-wilson.onrender.com/contacts/650acc7d9a9a0652c4b9305f
+
+###
+GET https://cse341-wilson.onrender.com/contacts/650acc7d9a9a0652c4b93060
+
