@@ -3,11 +3,11 @@
 GET http://localhost:8080/contacts
 
 ### Get contacts by id
-GET http://localhost:8080/contacts/650acc7d9a9a0652c4b9305e
+GET http://localhost:8080/contacts/65155c5c9ca4fbe2a5f6a287
 ###
-GET http://localhost:8080/contacts/650acc7d9a9a0652c4b9305f
+GET http://localhost:8080/contacts/65155c5c9ca4fbe2a5f6a288
 ###
-GET http://localhost:8080/contacts/650acc7d9a9a0652c4b93060
+GET http://localhost:8080/contacts/65155c5c9ca4fbe2a5f6a289
 
 ### Create contact 
 POST  http://localhost:8080/contacts HTTP/1.1 content-type: application/json
@@ -21,18 +21,18 @@ POST  http://localhost:8080/contacts HTTP/1.1 content-type: application/json
 }
 
 ### PUT/update contact 
-PUT http://localhost:8080/contacts/650acc7d9a9a0652c4b9305e HTTP/1.1 content-type: application/json
+PUT http://localhost:8080/contacts/65155c5c9ca4fbe2a5f6a287  HTTP/1.1 content-type: application/json
 
 {
-"firstName":"Gifty",
-"lastName":"Gbedemah", 
-"email":"newlook1@gmail.com", 
-"favoriteColor":"Orange", 
-"birthday":"9/5/2000"
+    "firstName": "Gifty",
+    "lastName": "Gbedemah",
+    "email": "newtest@gmail.com",
+    "favoriteColor": "Orange",
+    "birthday": "9/5/2000"
 }
 
 ### DELETE contact
-DELETE DELETE http://localhost:8080/contacts/650acc7d9a9a0652c4b93060 HTTP/1.1
+DELETE http://localhost:8080/contacts/ HTTP/1.1
 
 
 
