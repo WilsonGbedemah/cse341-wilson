@@ -10,25 +10,16 @@ GET http://localhost:8080/contacts/651561fd3c8ebf6904fb39ed
 GET http://localhost:8080/contacts/651561fd3c8ebf6904fb39ee
 
 ### Create contact 
-POST  http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
 
 {
-"firstName":"Lucas",
-"lastName":"Kuma",
-"email":"lucasKumah1@gmail.com",
-"favoriteColor":"red", 
-"birthday":"05/10/1991"
+"firstName":"Lucas", "lastName":"Kuma", "email":"lucas1@gmail.com", "favoriteColor":"Red", "birthday":"05/10/1991"
 }
-
-### PUT/update contact 
-PUT http://localhost:8080/contacts/65155c5c9ca4fbe2a5f6a287  HTTP/1.1 content-type: application/json
+### PUT contact 
+PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 content-type: application/json
 
 {
-    "firstName": "Gifty",
-    "lastName": "Gbedemah",
-    "email": "newtest@gmail.com",
-    "favoriteColor": "Orange",
-    "birthday": "9/5/2000"
+"firstName":"Gifty", "lastName":"Gbedemah", "email":"test@gmail.com", "favoriteColor":"Orange", "birthday":"09/05/2020"
 }
 
 ### DELETE contact
