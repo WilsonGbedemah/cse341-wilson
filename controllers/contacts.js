@@ -28,10 +28,12 @@ const createContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   };
+  console.log('Data received for createContact:', contact);
   const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
+    console.log('Error creating contact:', response.error);
     res.status(500).json(response.error || 'Some error occurred while creating the contact.');
   }
 };
@@ -46,6 +48,7 @@ const updateContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   };
+  console.log('Data received for updateContact:', contact);
   const response = await mongodb
     .getDb()
     .db()
@@ -57,6 +60,7 @@ const updateContact = async (req, res) => {
   if (response.modifiedCount > 0) {
     res.status(204).send();
   } else {
+    console.log('Error creating contact:', response.error);
     res.status(500).json(response.error || 'Some error occurred while updating the contact.');
   }
 };
