@@ -17,7 +17,12 @@ POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
 }
 
 ### PUT contact 
+<<<<<<< HEAD
 PUT http://localhost:8080/contacts/6518269ca623351589d780dd HTTP/1.1 content-type: application/json
+=======
+PUT http://localhost:8080/contacts/651561fd3c8ebf6904fb39ec
+### HTTP/1.1 content-type: application/json
+>>>>>>> ca016dbeeb8058d9648b13e44926c150dd410e33
 
 {
 "firstName":"Lucas", "lastName":"Kumah", "email":"test@gmail.com", "favoriteColor":"Black", "birthday":"05/06/1991"
@@ -52,6 +57,11 @@ POST https://cse341-wilson.onrender.com/contacts HTTP/1.1 content-type: applicat
 }
 ### PUT contact 
 PUT https://cse341-wilson.onrender.com/contacts/651561fd3c8ebf6904fb39ec
+<<<<<<< HEAD
+=======
+### HTTP/1.1 content-type: application/json
+
+>>>>>>> ca016dbeeb8058d9648b13e44926c150dd410e33
 {
 "firstName":"Gifty", "lastName":"Gbedemah", "email":"test@gmail.com", "favoriteColor":"Orange", "birthday":"09/05/2020"
 }
