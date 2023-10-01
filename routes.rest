@@ -9,28 +9,24 @@ GET http://localhost:8080/contacts/651561fd3c8ebf6904fb39ed
 ###
 GET http://localhost:8080/contacts/651561fd3c8ebf6904fb39ee
 
-### Create contact 
-POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+### Create single contact
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json
 
 {
-"firstName":"Lucas", "lastName":"Kuma", "email":"lucas1@gmail.com", "favoriteColor":"Red", "birthday":"05/10/1991"
+"firstName":"Lucas", "lastName":"Kuma", "email":"Lucas1@gmail.com", "favoriteColor":"Red", "birthday":"05/10/1991"
 }
 
-### PUT contact 
-<<<<<<< HEAD
-PUT http://localhost:8080/contacts/6518269ca623351589d780dd HTTP/1.1 content-type: application/json
-=======
-PUT http://localhost:8080/contacts/651561fd3c8ebf6904fb39ec
-### HTTP/1.1 content-type: application/json
->>>>>>> ca016dbeeb8058d9648b13e44926c150dd410e33
+### Edit Single contact 
+PUT http://localhost:8080/contacts/651953729afa0a80a0364b62 HTTP/1.1 
+content-type: application/json
 
 {
-"firstName":"Lucas", "lastName":"Kumah", "email":"test@gmail.com", "favoriteColor":"Black", "birthday":"05/06/1991"
+"firstName":"Lucas", "lastName":"Kumah", "email":"testnew@gmail.com", "favoriteColor":"Black", "birthday":"05/10/1991"
 } 
 
-### DELETE contact
- DELETE http://localhost:8080/contacts/6518269ca623351589d780dd HTTP/1.1
-
+### DELETE single contact 
+DELETE http://localhost:8080/contacts/651806faa71a4e0ed62f5762 HTTP/1.1
 
 
 
