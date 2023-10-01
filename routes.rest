@@ -18,7 +18,7 @@ content-type: application/json
 }
 
 ### Edit Single contact 
-PUT http://localhost:8080/contacts/651956a7b8e884e63070a4f6 HTTP/1.1 
+PUT http://localhost:8080/contacts/65195a9d8e65d094120b4501 HTTP/1.1 
 content-type: application/json
 
 {
@@ -26,7 +26,7 @@ content-type: application/json
 } 
 
 ### DELETE single contact 
-DELETE http://localhost:8080/contacts/651806faa71a4e0ed62f5762 HTTP/1.1
+DELETE http://localhost:8080/contacts/65195a9d8e65d094120b4501 HTTP/1.1
 
 
 
@@ -37,31 +37,33 @@ DELETE http://localhost:8080/contacts/651806faa71a4e0ed62f5762 HTTP/1.1
 GET https://cse341-wilson.onrender.com/contacts
 
 ###
-GET https://cse341-wilson.onrender.com/contacts/650acc7d9a9a0652c4b9305e
+GET https://cse341-wilson.onrender.com/contacts/651561fd3c8ebf6904fb39ec
 
 ###
-GET https://cse341-wilson.onrender.com/contacts/650acc7d9a9a0652c4b9305f
+GET https://cse341-wilson.onrender.com/contacts/651561fd3c8ebf6904fb39ed
 
 ###
-GET https://cse341-wilson.onrender.com/contacts/650acc7d9a9a0652c4b93060
+GET https://cse341-wilson.onrender.com/contacts/651561fd3c8ebf6904fb39ee
 
-### Create contact 
-POST https://cse341-wilson.onrender.com/contacts HTTP/1.1 content-type: application/json
+
+### Create single contact
+POST https://cse341-wilson.onrender.com/contacts HTTP/1.1 
+content-type: application/json
 
 {
-"firstName":"Lucas", "lastName":"Kuma", "email":"lucas1@gmail.com", "favoriteColor":"Red", "birthday":"05/10/1991"
+"firstName":"Lucas", "lastName":"Kuma", "email":"Lucas1@gmail.com", "favoriteColor":"Red", "birthday":"05/10/1991"
 }
-### PUT contact 
-PUT https://cse341-wilson.onrender.com/contacts/651561fd3c8ebf6904fb39ec
-<<<<<<< HEAD
-=======
-### HTTP/1.1 content-type: application/json
 
->>>>>>> ca016dbeeb8058d9648b13e44926c150dd410e33
+### Edit Single contact 
+PUT https://cse341-wilson.onrender.com/contacts/6518f924bda099be07fdbdd8 HTTP/1.1 
+content-type: application/json
+
 {
-"firstName":"Gifty", "lastName":"Gbedemah", "email":"test@gmail.com", "favoriteColor":"Orange", "birthday":"09/05/2020"
-}
+"firstName":"Lucas", "lastName":"Kumah", "email":"testnew@gmail.com", "favoriteColor":"Black", "birthday":"05/10/1991"
+} 
 
-### DELETE contact
-DELETE http://localhost:8080/contacts/ HTTP/1.1
+### DELETE single contact 
+DELETE https://cse341-wilson.onrender.com/contacts/6518f924bda099be07fdbdd8 HTTP/1.1
+
+
 
