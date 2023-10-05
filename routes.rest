@@ -18,7 +18,7 @@ content-type: application/json
 }
 
 ### Edit Single contact 
-PUT http://localhost:8080/contacts/65195a9d8e65d094120b4501 HTTP/1.1 
+PUT http://localhost:8080/contacts/651e9c7bc3db0ab6e1060e6d HTTP/1.1 
 content-type: application/json
 
 {
@@ -26,7 +26,7 @@ content-type: application/json
 } 
 
 ### DELETE single contact 
-DELETE http://localhost:8080/contacts/65195a9d8e65d094120b4501 HTTP/1.1
+DELETE http://localhost:8080/contacts/651e9c7bc3db0ab6e1060e6d HTTP/1.1
 
 
 
@@ -55,7 +55,7 @@ content-type: application/json
 }
 
 ### Edit Single contact 
-PUT https://cse341-wilson.onrender.com/contacts/6518f924bda099be07fdbdd8 HTTP/1.1 
+PUT https://cse341-wilson.onrender.com/contacts/651e3afbfc0bbcabff9eef6c HTTP/1.1 
 content-type: application/json
 
 {
@@ -63,7 +63,7 @@ content-type: application/json
 } 
 
 ### DELETE single contact 
-DELETE https://cse341-wilson.onrender.com/contacts/6518f924bda099be07fdbdd8 HTTP/1.1
+DELETE https://cse341-wilson.onrender.com/contacts/651e3afbfc0bbcabff9eef6c HTTP/1.1
 
 
 
