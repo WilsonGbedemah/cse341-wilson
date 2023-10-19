@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 const port = process.env.PORT || 8080;
 const app = express();
 const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger.json')
+const swaggerDocument = require('./swagger.json');
 
 app
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
@@ -18,6 +19,7 @@ app
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     next();
   })
+
   .use('/', require('./routes'));
 
 mongodb.initDb((err) => {
